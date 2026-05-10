@@ -1,0 +1,8 @@
+### PROMPT PUSH GITHUB ###
+perfecto. ahora quiero publicar el codigo en github, en este repositorio que he credo puedes hacerlo? URL_REPO_GITHUB
+
+### PROMPT MODIFY CODE & PUSH GITHUB ###
+gracias. Puedes ahora modificar el estilo del formularo para que predominen los colores rosa y violeta?
+
+### DESPLIEGUE CLOUD (RENDER) ###
+gracias ahora quiero desplegar el proyecto online usando Render, que debo poner en estos campos? Y es necesario cambiar algo del proyecto para que ya no sea en local sino que sea cloud?
