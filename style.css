@@ -1,13 +1,14 @@
 /* Global Reset & Base Styles */
 :root {
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
-    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    --primary: #a855f7; /* Violet */
+    --primary-hover: #9333ea;
+    --secondary: #ec4899; /* Pink */
+    --bg-gradient: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.1);
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent: #10b981;
+    --text-secondary: #cbd5e1;
+    --accent: #f472b6; /* Light Pink */
     --font-family: 'Outfit', system-ui, -apple-system, sans-serif;
 }
 
@@ -38,7 +39,7 @@ body::before, body::after {
     border-radius: 50%;
     filter: blur(100px);
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 body::before {
@@ -49,7 +50,7 @@ body::before {
 }
 
 body::after {
-    background: #ec4899;
+    background: var(--secondary);
     bottom: 10%;
     right: 10%;
     animation: float 15s infinite alternate-reverse;
@@ -127,7 +128,7 @@ textarea:focus {
     outline: none;
     border-color: var(--primary);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
 }
 
 /* Rating Scale */
@@ -160,9 +161,9 @@ textarea:focus {
 }
 
 .rating-option input:checked + label {
-    background: var(--primary);
-    border-color: var(--primary);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    background: var(--secondary);
+    border-color: var(--secondary);
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
     transform: translateY(-2px);
 }
 
@@ -203,7 +204,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.4);
 }
 
 button[type="submit"]:active {
