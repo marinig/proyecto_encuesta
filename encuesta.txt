@@ -1,0 +1,21 @@
+### PROMPT ENCUESTA ###
+Crea una página web sencilla con HTML, CSS y JavaScript que muestre una encuesta a mis estudiantes para conocer su opinion sobre el curso de Antigravity. Debes incluir 4 preguntas:
+- id_estudiante. El identificador del alumno. Debe escribirlo el en formato texto
+- nivel_satisfaccion. Escala del 1 al 5 (muy insatisfecho a muy satisfecho)
+- claridad_contenido. Escala del 1 al 5 (muy poco claro a muy claro)
+- aplicabilidad_practica. Escala del 1 al 5 (nada aplicable a muy aplicable)
+- comentarios_adicionales. Campo de texto libre
+
+### PROMPT CONEXIÓN AIRTABLE ###
+perfecto gracias. Ahora necesito que cuando se rellene la encuesta los datos se envien a airtable y se almacenen en la tabla siguiente: https://airtable.com/applawSldx6nWPnUM/tblHPMsqQroPw0Vm2/viwKc9rurL1hlvUTs
+
+El token para poder acceder via api es: [REDACTED_SECRET]
+
+Te adjunto una imagen de las columnas de airtable para que puedas ver el nombre que tienen y así lo integres correctamente
+
+### PROMPT n8n webhook ###
+perfecto gracias. Ahora necesito que cuando se haga click en el boton de finalizar la encuesta, ademas de enviar los datos a airtbable debe hacerse una llamada a este webhook de n8n (no tiene autenticacion). El webhook lo que hará es enviar un email
+URL_WEBHOOK_N8N=[REDACTED_WEBHOOK]
+
+### PROMPT SEGURIDAD ###
+Ahora necesito que revises posibles brechas de seguridad en el código, tokens o credenciales que estén hardcodeadas y visibles, y todo lo que veas como potencial peligro. Una vez que lo hayas hecho propón mejoras para solucionarlo y aplícalas para hacer que el proyecto sea más seguro
